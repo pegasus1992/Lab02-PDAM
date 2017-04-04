@@ -1,0 +1,13 @@
+<ion-view title="Users Edit">
+    <ion-content padding="true" class="has-header">
+        <form id="usersEdit-form1" class="list">
+            <label class="item item-input" id="usersEdit-input1">
+                <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" ng-model="email" required>
+            </label>
+            <label class="item item-input" id="usersEdit-input2">
+                <input type="text" placeholder="Name" ng-model="name" required>
+            </label>
+        </form>
+        <button id="usersEdit-button11" class="button button-balanced button-block" ng-click="saveUser(email, name)">Save</button>
+    </ion-content>
+</ion-view>
